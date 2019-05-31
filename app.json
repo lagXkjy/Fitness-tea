@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/tabBar/shop/shop",
+    "pages/tabBar/activity/activity",
+    "pages/tabBar/my/my",
+    "pages/my/register/register",
+    "pages/shop/shopDetail/shopDetail",
+    "pages/shop/courseDetail/courseDetail",
+    "pages/my/myCourseListCocah/myCourseListCocah",
+    "pages/my/myIncomeCocah/myIncomeCocah",
+    "pages/my/myCoursePrivateCocah/myCoursePrivateCocah",
+    "pages/my/myCourseOrderCocah/myCourseOrderCocah",
+    "pages/my/myCourseOrderCocah2/myCourseOrderCocah2",
+    "pages/my/myCourseListPrivateCoach/myCourseListPrivateCoach",
+    "pages/my/myCourseDetail/myCourseDetail",
+    "pages/my/setTime/setTime",
+    "pages/my/setCourseTime/setCourseTime",
+    "pages/my/myInfoCoach/myInfoCoach",
+    "pages/activity/activityDetail/activityDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "健身预约",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#575757",
+    "selectedColor": "#ff425b",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/shop/shop",
+        "text": "课程表",
+        "iconPath": "./images/tabBar-course1.png",
+        "selectedIconPath": "./images/tabBar-course.png"
+      },
+      {
+        "pagePath": "pages/tabBar/activity/activity",
+        "text": "活动",
+        "iconPath": "./images/tabBar-activity1.png",
+        "selectedIconPath": "./images/tabBar-activity.png"
+      },
+      {
+        "pagePath": "pages/tabBar/my/my",
+        "text": "我的",
+        "iconPath": "./images/tabBar-me1.png",
+        "selectedIconPath": "./images/tabBar-me.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 60000
+  },
+  "debug": false
+}

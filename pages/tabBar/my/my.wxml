@@ -1,0 +1,25 @@
+<block wx:if='{{userType==2}}'>
+  <view class='header border-box margin-b-20'>
+    <image mode='widthFix' class='header-image' src='{{images}}coach.jpg'></image>
+    <view class='header-box flex align-center padding-lr-30 flex-wrap'>
+      <open-data wx:if='{{!CoaHeadPic}}' type='userAvatarUrl' class='header-portrait margin-r-20'></open-data>
+      <image wx:if='{{CoaHeadPic}}' class='header-portrait margin-r-20' src='{{CoaHeadPic&&teaSrc+CoaHeadPic}}'></image>
+      <view class='font-28 white-color userName border-box'>
+        <text wx:if='{{CoaName}}' class='font-weight'>{{CoaName}}</text>
+        <open-data wx:if='{{!CoaName}}' type='userNickName' class='font-weight'></open-data>
+        <view bindtap='skipMyInfoCoach' class='margin-t-10'>查看个人资料</view>
+      </view>
+    </view>
+  </view>
+  <view class='border-t-1'>
+    <block wx:for='{{teaList}}' wx:key='{{index}}'>
+      <view bindtap='skip' data-url='{{item.url}}' class='border-box border-b-1 white-bg padding-lr-30 padding-tb-30 flex justify-between'>
+        <view class='flex align-center'>
+          <image class='list-image margin-r-20' mode='widthFix' src='{{item.image}}'></image>
+          <text class='font-30 black-color'>{{item.title}}</text>
+        </view>
+        <image mode='widthFix' class='right-image' src='/images/right.png'></image>
+      </view>
+    </block>
+  </view>
+</block>

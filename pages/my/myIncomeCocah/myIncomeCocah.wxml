@@ -1,0 +1,24 @@
+<view class='padding-30 border-b-1 white-bg flex align-center'>
+  <image mode='widthFix' src='/images/price.png' class='image'></image>
+  <text class='gray-color font-22 margin-l-20 margin-r-10'>总收入</text>
+  <text class='theme-color font-30 font-weight'>¥{{Income}}</text>
+</view>
+<view wx:if='{{listData.length>0}}' class='margin-t-20 border-t-1'>
+  <block wx:for='{{listData}}' wx:key='{{index}}'>
+    <view class='border-b-1 padding-30 flex justify-between align-center white-bg'>
+      <view class='width-80'>
+        <view class='boack-color font-28 '>
+          {{item.CorName}}
+        </view>
+        <view class='font-22 gray-color margin-t-20'>
+          <text class='margin-r-10'>{{item.showTime}}</text>
+          <text>{{item.CodName}}</text>
+        </view>
+      </view>
+      <view class='flex align-center'>
+        <text class='gray-color font-22 margin-r-10'>+</text>
+        <text class='theme-color font-30'>¥{{item.CodCoaPer}}</text>
+      </view>
+    </view>
+  </block>
+</view>

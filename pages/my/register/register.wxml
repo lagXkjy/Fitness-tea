@@ -1,0 +1,5 @@
+<view class='wrapper padding-lr-30 font-26 border-box'>
+  <input bindinput='account' type='text' name='account' class='border-box border-b-1' placeholder='账号'></input>
+  <input bindinput='password' type='password' name='password' class='border-box border-b-1' placeholder='密码'></input>
+  <button bindgetuserinfo='getUserInfo' open-type='getUserInfo' class='btn width-100 theme-bg white-color flex justify-center align-center font-32'>绑定</button>
+</view>

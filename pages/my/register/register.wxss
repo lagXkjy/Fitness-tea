@@ -1,0 +1,19 @@
+page {
+  background: #fff;
+}
+
+.wrapper {
+  padding-top: 48rpx;
+}
+
+input {
+  height: 80rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.btn {
+  border-radius: 6rpx;
+  height: 90rpx;
+  margin-top: 60rpx;
+}

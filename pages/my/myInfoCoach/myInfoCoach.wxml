@@ -1,0 +1,24 @@
+<view class='border-b-1 white-bg padding-30 flex justify-between font-28'>
+  <view class='black-color'>姓名</view>
+  <view class='gray-color list-right border-box'>{{CoaInfo.CoaName}}</view>
+</view>
+<view class='border-b-1 white-bg padding-30 flex justify-between font-28'>
+  <view class='black-color'>手机</view>
+  <view class='gray-color list-right border-box'>{{CoaInfo.CoaPhone}}</view>
+</view>
+<view class='border-b-1 white-bg padding-30 flex justify-between font-28'>
+  <view class='black-color'>所属城市</view>
+  <view class='gray-color list-right border-box'>{{CoaInfo.CoaCtyName}}</view>
+</view>
+<view class='border-b-1 white-bg padding-30 flex justify-between font-28'>
+  <view class='black-color'>所属门店</view>
+  <view class='gray-color list-right border-box'>{{CoaInfo.CoaStrName}}</view>
+</view>
+<view class='border-b-1 white-bg padding-30 flex justify-between font-28'>
+  <view class='black-color'>提成比例</view>
+  <view class='gray-color list-right border-box'>{{CoaInfo.CoaPercentage}}%</view>
+</view>
+<view class='border-b-1 white-bg padding-30 flex justify-between font-28'>
+  <view class='black-color'>简介</view>
+  <view class='gray-color list-right border-box'>{{CoaInfo.CoaAbstract}}</view>
+</view>

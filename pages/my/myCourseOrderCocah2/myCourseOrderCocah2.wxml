@@ -1,0 +1,9 @@
+<block wx:for='{{corInfos}}' wx:key='{{index}}'>
+  <view class='margin-t-20'>
+    <course-info-top is-group='{{true}}'  order-num='{{item.CodOutradeno}}' ></course-info-top>
+    <course-info data-index='{{index}}' is-check='{{true}}' bindclicklist='skipMyCourseDetail' obj='{{item}}' i-url='{{teaSrc}}' bindcheck='skipMyCourseDetail'></course-info>
+  </view>
+</block>
+<view wx:if='{{corInfos.length<=0}}' class='noData'>
+  暂无数据
+</view>

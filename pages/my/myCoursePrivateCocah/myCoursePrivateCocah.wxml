@@ -1,0 +1,15 @@
+<view class='table white-bg flex align-center justify-between font-28'>
+  <block wx:for='{{table}}' wx:key='{{index}}'>
+    <view bindtap='tableChange' data-index='{{index}}' class='tabler-list {{tableIndex===index&&"table-now"}}'>{{item}}</view>
+  </block>
+</view>
+<block wx:for='{{orderInfo}}' wx:key='{{index}}'>
+  <view class='margin-t-20'>
+    <course-info-top is-group='{{false}}' stu-name='{{item.CodName}}' stu-phone='{{item.CodPhone}}' now='{{item.Already}}' end='{{item.CorClaTimes}}'></course-info-top>
+    <course-info data-index='{{index}}' bindclicklist='skipMyCourseDetail' obj='{{item}}' i-url='{{teaSrc}}'></course-info>
+    <course-info-bottom data-index='{{index}}' bindsetTime='setTime' bindcheck='skipMyCourseDetail' tab-text='{{tableIndex===0?"已预约":"已完成"}}' is-set='{{tableIndex==0}}'></course-info-bottom>
+  </view>
+</block>
+<view wx:if='{{orderInfo.length<=0}}' class='noData'>
+  暂无数据
+</view>

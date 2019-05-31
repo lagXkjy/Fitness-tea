@@ -1,0 +1,5 @@
+<select-time bindtimeChange='start' context='开始时间'></select-time>
+<select-time bindtimeChange='end' context='结束时间'></select-time>
+<view class='padding-lr-30'>
+  <view bindtap='submit' class='btn width-100 theme-bg white-color flex justify-center align-center font-32'>提交</view>
+</view>

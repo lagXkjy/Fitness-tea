@@ -1,0 +1,15 @@
+<!-- <view class='table white-bg flex align-center justify-between font-28'>
+  <block wx:for='{{table}}' wx:key='{{index}}'>
+    <view bindtap='tableChange' data-index='{{index}}' class='tabler-list {{tableIndex===index&&"table-now"}}'>{{item}}</view>
+  </block>
+</view> -->
+<block wx:for='{{corInfos}}' wx:key='{{index}}'>
+  <view class='margin-t-20'>
+    <!-- <course-info-top is-group='{{true}}' show-time='{{item.showTime}}' tab-index='{{tableIndex}}'></course-info-top> -->
+    <course-info data-index='{{index}}' bindclicklist='skipMyCourseDetail' obj='{{item}}' i-url='{{teaSrc}}' bindcheck='skipMyCourseDetail'></course-info>
+    <course-info-bottom data-index='{{index}}' bindcheck='skipMyCourseDetail' show-time='{{item.showTime}}' is-count='{{item.OrderCount}}'></course-info-bottom>
+  </view>
+</block>
+<view wx:if='{{corInfos.length<=0}}' class='noData'>
+  暂无数据
+</view>

@@ -1,0 +1,11 @@
+page{
+  background: #ffffff;
+}
+.btn {
+  border-radius: 6rpx;
+  height: 90rpx;
+  margin-top: 70rpx;
+}
+.right{
+  width: 18rpx;
+}

@@ -1,0 +1,25 @@
+<view wx:if='{{isGroup}}' class='wrapper'>
+  <view wx:if="{{showTime}}" class='box'>
+    <image mode='widthFix' class='list-image' src='/images/time.png'></image>
+    <text>{{showTime}}</text>
+  </view>
+  <view wx:if="{{orderNum}}" class='box'>
+    <image mode='widthFix' class='list-image' src='/images/yuyue.jpg'></image>
+    <text>订单号：{{orderNum}}</text>
+  </view>
+  <view>
+    {{tabIndex==0?"已预约":"已完成"}}
+  </view>
+</view>
+<view wx:if='{{!isGroup}}' class='wrapper'>
+  <view class='box'>
+    <image mode='widthFix' class='list-image' src='/images/time.png'></image>
+    <text class='color'>{{now}}课时 </text><text> / {{end}}课时</text>
+  </view>
+  <view wx:if='{{!isRight}}'>
+    学员：{{stuName}} / {{stuPhone}}
+  </view>
+  <view wx:if='{{isRight}}'>
+    {{tabIndex==0?"已预约":"已完成"}}
+  </view>
+</view>

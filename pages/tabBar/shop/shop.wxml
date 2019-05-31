@@ -1,0 +1,19 @@
+<!--  教练  -->
+<block wx:if='{{userType==2}}'>
+  <view class='banner'>
+    <image class='banner-image' src='{{store.StrImgName&&(shopSrc+store.StrImgName)}}'></image>
+    <view class='banner-text white-color font-38 flex justify-center'>{{store.StrName}}</view>
+    <view bindtap='skipShopDetail' class='banner-btn theme-color font-22 border-box flex justify-center align-center'>点击了解</view>
+  </view>
+  <view class='border-b-1'>
+    <week is-fitness='{{true}}' bindweekChange='weekChange'></week>
+  </view>
+  <block wx:for='{{corInfos}}' wx:key='{{index}}'>
+    <view class='margin-t-20 border-t-1 border-b-1'>
+      <course-info bindclicklist='clickList' data-index='{{index}}' obj='{{item}}' is-group='{{true}}' i-url='{{teaSrc}}' is-group='{{item.CorType==0?false:true}}' is-private='{{item.CorType==0?true:false}}'></course-info>
+    </view>
+  </block>
+</block>
+<view wx:if='{{corInfos.length<=0}}' class='noData'>
+  暂无数据
+</view>

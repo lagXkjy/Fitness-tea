@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "我的私课",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "course-info": "/component/courseInfo/courseInfo"
+  }
+}
